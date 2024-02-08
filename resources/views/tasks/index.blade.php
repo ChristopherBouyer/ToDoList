@@ -7,13 +7,13 @@
         @foreach ($tasks as $task)
             <li>
                 {{ $task->name }} - {{ $task->date }} - {{ $task->category->name }}
-                <a href="{{ route('tasks.edit', $task->id) }}" class="edit-btn">Edit</a>
+                <a href="{{ route('tasks.edit', $task->id) }}" class="edit-btn">Modifer</a>
                 
                 <!-- Formulaire pour la suppression de la tâche -->
                 <form action="{{ route('tasks.destroy', $task->id) }}" method="post" style="display: inline-block;">
                     @csrf
                     @method('delete')
-                    <button type="submit">Delete</button>
+                    <button type="submit">Supprimer</button>
                 </form>
             </li>
         @endforeach
