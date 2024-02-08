@@ -3,6 +3,7 @@
 2 - Installer les dépendances du projet:
 
 cd ToDoList
+
 composer install
 
 3 - Modifier .env.example en .env
