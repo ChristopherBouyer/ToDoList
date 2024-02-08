@@ -1,20 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Edit Category</h1>
+    <h1>Modifier une catégorie</h1>
 
     <form action="{{ route('categories.update', $category->id) }}" method="post">
         @csrf
         @method('put')
 
-        <label for="name">Category Name:</label>
+        <label for="name">Nom de la catégorie:</label>
         <input type="text" name="name" value="{{ $category->name }}" required>
         <br>
 
-        <label for="color">Category Color:</label>
+        <label for="color">Couleur de la catégorie:</label>
         <input type="text" name="color" value="{{ $category->color }}" required>
         <br>
 
-        <button type="submit">Update Category</button>
+        <button type="submit">Modifier catégorie</button>
     </form>
 @endsection

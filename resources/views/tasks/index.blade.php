@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Task List</h1>
+    <h1>Liste des tâches</h1>
 
     <ul>
         @foreach ($tasks as $task)
@@ -19,7 +19,7 @@
         @endforeach
     </ul>
 
-    <a href="{{ route('tasks.create') }}" class="create-btn">Create Task</a>
+    <a href="{{ route('tasks.create') }}" class="create-btn">Créer une tâche</a>
     
     {{ $tasks->links() }}
 @endsection
