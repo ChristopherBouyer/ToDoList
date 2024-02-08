@@ -5,14 +5,14 @@
 cd ToDoList
 composer install
 
-Modifier .env.example en .env
+3 - Modifier .env.example en .env
 
-Le configurer si nécéssaire
+4 - Le configurer si nécéssaire
 
-Lancer la migration de la base de donnée
+5 - Lancer la migration de la base de donnée
 
 php artisan migrate
 
-Lancer le serveur de développement:
+6 - Lancer le serveur de développement:
 
 php artisan serv
