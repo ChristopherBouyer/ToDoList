@@ -1,6 +1,13 @@
-Cloner le dépôt
+ 1 - Cloner le dépôt
 
-Configurer si nécéssaire le fichier en .env
+2 - Installer les dépendances du projet:
+
+cd ToDoList
+composer install
+
+Modifier .env.example en .env
+
+Le configurer si nécéssaire
 
 Lancer la migration de la base de donnée
 
